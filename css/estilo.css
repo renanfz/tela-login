@@ -49,12 +49,18 @@ button {
     display: inline-block;
     background-color: var(--azul);
     height: 33px;
-    width: 100px;
+    width: 268px;
     border: none;
     border-radius: 6px;
     color: white;
     font-weight: 500;
 }
 
-
+div#button-group {
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+}
 
