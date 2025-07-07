@@ -1,7 +1,14 @@
 @charset "UTF-8";
 
 /* Paleta de cores
-    Azul: # */
+    Azul:
+    Cinza: 
+     # */
+
+:root {
+    --azul:#0078D7 ;
+    --cinza: #d6d6d6;
+}
 
 * {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -12,20 +19,42 @@
 main {
     margin: auto;
     margin-top: 50px;
-    width: 400px;
+    width: 300px;
     height: 300px;
+}
+
+div#titulo {
+    margin-bottom: 10px;
 }
 
 div#formulario {
     display: block;
-    border: 1px solid black;
+    border: 1px solid var(--cinza);
     border-radius: 7px;
     padding: 15px;
 }
 
 input { /* TextBox */
+    background-color:var(--cinza);
+    border: none;
+    border-radius: 6px;
     display: flex;
-    width: 365px;
-    height: 30px;
+    width: 268px;
+    height: 33px;
     margin: 5px 0px 5px 0px;
+    text-indent: 10px;
 }
+
+button {
+    display: inline-block;
+    background-color: var(--azul);
+    height: 33px;
+    width: 100px;
+    border: none;
+    border-radius: 6px;
+    color: white;
+    font-weight: 500;
+}
+
+
+
