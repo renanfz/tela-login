@@ -5,10 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="css/media-query.css">
 </head>
 <body>
     <main>
         <section id="login">
+            <div id="imagem">
+                <!-- Aqui vai a imagem nas CSS -->
+            </div>
             <div id="formulario">
                 <form action="login.php" method="post">
                     <div id="titulo">
@@ -26,8 +30,10 @@
                       id="isenha"
                       placeholder="Senha"
                     >
-                    <button type="button">Entrar</button>
-                    <button type="button">Esqueci a senha</button>
+                    <div id="button-group">
+                        <button type="button">Entrar</button>
+                        <button type="button">Esqueci a senha</button>
+                    </div>
                 </form>
             </div>
         </section>

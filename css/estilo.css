@@ -1,11 +1,8 @@
 @charset "UTF-8";
 
-/* Paleta de cores
-    Azul:
-    Cinza: 
-     # */
+/* Mobile First */
 
-:root {
+:root { /* Paleta de cores */
     --azul:#0078D7 ;
     --cinza: #d6d6d6;
 }
@@ -14,13 +11,24 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0px;
     padding: 0px;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100vh;
+    width: 100vw;
 }
 
 main {
-    margin: auto;
-    margin-top: 50px;
-    width: 300px;
-    height: 300px;
+    width: 100vw;
+    height: 100vh;
+}
+
+section#login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
 
 div#titulo {
@@ -45,16 +53,26 @@ input { /* TextBox */
     text-indent: 10px;
 }
 
+::placeholder {
+   font-weight: 500;
+}
+
 button {
-    display: inline-block;
+    display: block;
     background-color: var(--azul);
     height: 33px;
-    width: 100px;
+    width: 268px;
     border: none;
     border-radius: 6px;
     color: white;
     font-weight: 500;
 }
 
-
+div#button-group {
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+}
 
