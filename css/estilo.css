@@ -3,4 +3,29 @@
 /* Paleta de cores
     Azul: # */
 
-    
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+main {
+    margin: auto;
+    margin-top: 50px;
+    width: 400px;
+    height: 300px;
+}
+
+div#formulario {
+    display: block;
+    border: 1px solid black;
+    border-radius: 7px;
+    padding: 15px;
+}
+
+input { /* TextBox */
+    display: flex;
+    width: 365px;
+    height: 30px;
+    margin: 5px 0px 5px 0px;
+}
