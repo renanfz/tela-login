@@ -25,6 +25,11 @@ main {
     max-width: 300px;
 }
 
+#imagem {
+    background: url(../imagens/capa-mobile.png);
+    background-size: contain;
+}
+
 #form-header {
     margin-bottom: 10px;
 }
