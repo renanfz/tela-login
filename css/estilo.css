@@ -4,6 +4,7 @@
 
 :root {
     --azul:#0078D7 ;
+    --azul-claro: #E8F0FE;
     --cinza: #d6d6d6;
 }
 
@@ -25,9 +26,12 @@ main {
     max-width: 300px;
 }
 
-#imagem {
-    background: url(../imagens/capa-mobile.png);
-    background-size: contain;
+div#capa {
+    background-color: var(--cinza);
+    border-radius: 7px 7px 0px 0px;
+    padding: 12px;
+    width: 276px;
+    height: 75px;
 }
 
 #form-header {
@@ -37,7 +41,7 @@ main {
 #login-form {
     display: block;
     border: 1px solid var(--cinza);
-    border-radius: 7px;
+    border-radius: 0px 0px 7px 7px;
     padding: 15px;
 }
 
@@ -47,7 +51,7 @@ input { /* TextBox */
     border-radius: 6px;
     width: 268px;
     height: 33px;
-    margin: 5px 0px 5px 0px;
+    margin: 5px 0px 2px 0px;
     text-indent: 10px;
 }
 
@@ -75,8 +79,6 @@ div#button-group {
     align-items: center;
 }
 
-div#teste {
-    border: 1px solid black;
-    height: 100px;
-    width: 300px;
+::placeholder {
+    font-weight: 500;
 }
