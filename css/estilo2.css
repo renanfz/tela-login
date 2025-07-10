@@ -4,7 +4,7 @@
 
 :root {
     --azul:#A640FF ;
-    --azul-claro: #E8F0FE;
+    --roxo-escuro: #8332ca;
     --cinza: #d6d6d6;
 }
 
@@ -68,20 +68,42 @@ div#formulario > div.titulo {
     font-weight: 500;
 }
 
-.campo > input {
+.campo > input { /* TextBox */
     margin: 4px 0px 8px 0px;
     height: 33px;
-    text-indent: 7px;
+    text-indent: 10px;
     border: 1px solid rgba(0, 0, 0, 0.255);
     border-radius: 7px;
 }
 
-.campo > input#lembrar{
-    display: block;
-    height: 15px;
-    text-align: left;
+/* Area Lembrar ---------------------------------- */
+div#lembrar {
+    display: flex;
+    align-items: center;
+    height: 35px;
 }
 
+#lembrar input[type="checkbox"] {
+    display: inline;
+    accent-color: var(--azul);
+    transform: scale(1.2);
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+#lembrar label[for="inplembrar"] {
+    font-size: .8em;
+    font-weight: 400;
+    cursor: pointer;
+    margin-left: 5px;
+    transition:  color 0.3s ease;
+}
+
+#lembrar label[for="inplembrar"]:hover {
+    color: var(--azul);
+}
+
+/* Botoes -----------------------------------------*/
 .botoes {
     display: grid;
     margin-top: 7px;
@@ -94,7 +116,7 @@ div#formulario > div.titulo {
     border-radius: 7px;
     height: 33px;
     width: 278px;
-    
+    transition: 0.3s ease;
 }
 
 .botoes > button#esenha {
@@ -102,4 +124,8 @@ div#formulario > div.titulo {
     color: rgba(0, 0, 0, 0.718);
     text-align: right;
     font-size: .8em;
+}
+
+.botoes > button:hover {
+    background-color: var(--roxo-escuro);
 }
