@@ -3,7 +3,7 @@
 /* Mobile First */
 
 :root {
-    --azul:#0078D7 ;
+    --azul:#A640FF ;
     --azul-claro: #E8F0FE;
     --cinza: #d6d6d6;
 }
@@ -48,17 +48,17 @@ section#login > div#capa {
     margin: -10px;
 }
 
-
-
 section#login > div#formulario {
     display: block;
     padding: 10px;
 }
+
 div#formulario > div.titulo {
     margin-bottom: 20px;
     text-align: center;
 
 }
+
 .campo {
     display: grid;
 }
