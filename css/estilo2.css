@@ -31,7 +31,7 @@ section#login {
     left: 0; right: 0;
     margin: auto;
     width: 300px;
-    height: 350px;
+    height: 410px;
     border: 1px solid var(--cinza);
     border-radius: 7px;
 
@@ -40,11 +40,17 @@ section#login {
 }
 
 section#login > div#capa {
-    display: block;
+    background: url(../imagens/capa-mobile.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 300px;
+    height: 180px;
+    margin: -10px;
+/*     display: block;
     background-color: var(--cinza);
     height: 80px;
     border-radius: 7px 7px 0px 0px;
-    padding: 10px;
+    padding: 10px; */
 }
 
 section#login > div#formulario {
