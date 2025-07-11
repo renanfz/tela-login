@@ -119,7 +119,7 @@ div#lembrar {
     border: none;
     border-radius: 7px;
     height: 33px;
-    width: 278px;
+    width: 100%;
     transition: 0.3s ease;
 }
 
@@ -134,7 +134,11 @@ div#lembrar {
     background-color: var(--roxo-escuro);
 }
 
-/* Rodapé */
+.botoes >button#esenha:hover {
+    text-decoration: underline;
+}
+
+/* Rodapé ----------------------------------------*/
 footer {
     background-color: #1f1f1f; 
     color: #f0f0f0;           
