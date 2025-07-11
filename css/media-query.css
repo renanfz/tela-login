@@ -23,7 +23,7 @@
 
 @media screen and (min-width: 992px) { /* Telas maiores */
     section#login {
-        width: 800px;
+        width: 750px;
         height: 340px;
     }
 
@@ -40,12 +40,17 @@
 
     section#login > div#formulario {
         float: right;
-        width: 60%;
+        width: 55%;
         height: 100%;
         padding-left: 20px;
     }
 
-    div.titulo {
+    div.botoes > button {
+        width: 380px;
+    }
+
+    div.titulo > h1, p {
+        margin-top: 7px;
         text-align: left;
     }
 }
