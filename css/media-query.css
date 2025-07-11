@@ -53,4 +53,8 @@
         margin-top: 7px;
         text-align: left;
     }
+
+    p {
+        text-align: center;
+    }
 }
