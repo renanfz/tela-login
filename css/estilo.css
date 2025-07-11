@@ -3,8 +3,8 @@
 /* Mobile First */
 
 :root {
-    --azul:#0078D7 ;
-    --azul-claro: #E8F0FE;
+    --azul:#A640FF ;
+    --roxo-escuro: #8332ca;
     --cinza: #d6d6d6;
 }
 
@@ -12,73 +12,158 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0px;
     padding: 0px;
+    box-sizing: border-box;
 }
 
-body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+body, html {
     height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
 }
 
 main {
-    width: 90%;
-    max-width: 300px;
+    height: 100vh;
+    width: 100vw;
 }
 
-div#capa {
-    background-color: var(--cinza);
-    border-radius: 7px 7px 0px 0px;
-    padding: 12px;
-    width: 276px;
-    height: 75px;
+/* Configs gerais --------------------------------*/
+section#login {
+    position: absolute;
+    top: 0; bottom: 0;
+    left: 0; right: 0;
+    margin: auto;
+    width: 300px;
+    height: 490px;
+    border: 1px solid rgba(0, 0, 0, 0);
+    border-radius: 10px;
+    box-shadow: 0px 1px 7px var(--cinza);
+
+    transition: width .3s, height .3s;
+    transition-timing-function: ease;
 }
 
-#form-header {
-    margin-bottom: 10px;
+section#login > div#capa {
+    background: url(../imagens/capa-mobile.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 300px;
+    height: 180px;
+    margin: -10px;
 }
 
-#login-form {
+section#login > div#formulario {
     display: block;
-    border: 1px solid var(--cinza);
-    border-radius: 0px 0px 7px 7px;
-    padding: 15px;
+    padding: 10px;
 }
 
-input { /* TextBox */
-    background-color:var(--cinza);
-    border: none;
-    border-radius: 6px;
-    width: 268px;
+div#formulario > div.titulo {
+    margin-bottom: 20px;
+    text-align: center;
+
+}
+
+/* Campos ---------------------------------------- */
+.campo {
+    display: grid;
+}
+
+.campo > label {
+    font-size: .8em;
+    font-weight: 500;
+}
+
+.campo > input { /* TextBox */
+    margin: 4px 0px 8px 0px;
     height: 33px;
-    margin: 5px 0px 2px 0px;
     text-indent: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.255);
+    border-radius: 7px;
 }
 
-input:focus {
-    outline: 2px solid var(--azul);
+/* Area Lembrar ---------------------------------- */
+div#lembrar {
+    display: flex;
+    align-items: center;
+    height: 35px;
 }
 
-button {
-    display: inline-block;
+#lembrar input[type="checkbox"] {
+    display: inline;
+    accent-color: var(--azul);
+    transform: scale(1.2);
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+#lembrar label[for="inplembrar"] {
+    font-size: .8em;
+    font-weight: 400;
+    cursor: pointer;
+    margin-left: 5px;
+    transition:  color 0.3s ease;
+}
+
+#lembrar label[for="inplembrar"]:hover {
+    color: var(--azul);
+}
+
+/* Botoes -----------------------------------------*/
+.botoes {
+    display: grid;
+    margin-top: 7px;
+}
+.botoes > button {
     background-color: var(--azul);
-    height: 33px;
-    width: 268px;
-    border: none;
-    border-radius: 6px;
     color: white;
     font-weight: 500;
-    margin-top: 4px;
+    border: none;
+    border-radius: 7px;
+    height: 33px;
+    width: 100%;
+    transition: 0.3s ease;
 }
 
-div#button-group {
-    padding: 5px;
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-    align-items: center;
+.botoes > button#esenha {
+    background-color: white;
+    color: rgba(0, 0, 0, 0.718);
+    text-align: right;
+    font-size: .8em;
 }
 
-::placeholder {
-    font-weight: 500;
+.botoes > button:hover {
+    background-color: var(--roxo-escuro);
+}
+
+.botoes >button#esenha:hover {
+    text-decoration: underline;
+}
+
+/* Rodapé ----------------------------------------*/
+footer {
+    background-color: #1f1f1f; 
+    color: #f0f0f0;           
+    padding: 10px;        
+    text-align: center;         
+    font-family: 'Segoe UI', sans-serif; 
+    font-size: 16px;        
+
+}
+
+footer h3 {
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+
+footer p {
+    line-height: 1.5;
+}
+
+footer a {
+    text-decoration: none;
+    color: var(--azul);
+}
+
+footer a:hover {
+    text-decoration: underline;    /* Adiciona sublinhado ao passar o mouse */
+    color: #ffffff;                /* Muda a cor do link ao interagir */
 }

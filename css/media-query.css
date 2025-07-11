@@ -1,7 +1,6 @@
 @charset "UTF-8";
 
-/* Tablet: 768px até 992px */
-
+/* Tablet: 768px até 992px -----------------------*/
 @media screen and (min-width: 768px) and (max-width: 992px) { /* Tablet */
     section#login {
         width: 90vw;
@@ -21,7 +20,8 @@
     }
 }
 
-@media screen and (min-width: 992px) { /* Telas maiores */
+/* Telas maiores ---------------------------------*/
+@media screen and (min-width: 992px) { 
     section#login {
         width: 750px;
         height: 340px;
