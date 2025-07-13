@@ -171,3 +171,21 @@ footer a:hover {
     text-decoration: underline;    /* Adiciona sublinhado ao passar o mouse */
     color: #ffffff;                /* Muda a cor do link ao interagir */
 }
+
+dialog {
+    margin: auto;
+    padding: 10px;
+    border: none;
+    border-radius: 7px;
+}
+
+dialog > button {
+    float: right;
+    background-color: var(--azul);
+    color: white;
+    margin-top: 8px;
+    padding: 3px;
+    width: 35px;
+    border: none;
+    border-radius: 5px;
+}
