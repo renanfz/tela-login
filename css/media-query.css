@@ -3,20 +3,27 @@
 /* Tablet: 768px até 992px -----------------------*/
 @media screen and (min-width: 768px) and (max-width: 992px) { /* Tablet */
     section#login {
-        width: 90vw;
+        width: 520px;
+        height: 340px;
     }
 
     section#login > div#capa {
         float: left;
-        max-width: 25%;
+        max-width: 40%;
         height: 100%;
+        background-position: center center;
         
     }
 
     section#login > div#formulario { 
         float: right;
-        width: 75%;
+        width: 60%;
         height: 100%;
+    }
+
+    div.titulo > h1, p {
+        margin-top: 7px;
+        text-align: center;
     }
 }
 

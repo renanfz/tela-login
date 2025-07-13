@@ -19,6 +19,9 @@ body, html {
     height: 100vh;
     width: 100vw;
     overflow-x: hidden;
+    background: url(../imagens/fundo.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 main {
@@ -35,8 +38,9 @@ section#login {
     width: 300px;
     height: 490px;
     border: 1px solid rgba(0, 0, 0, 0);
-    border-radius: 10px;
-    box-shadow: 0px 1px 7px var(--cinza);
+    border-radius: 15px;
+    box-shadow: 0px 1px 7px rgba(0, 0, 0, 0.121);
+    background-color: white;
 
     transition: width .3s, height .3s;
     transition-timing-function: ease;
@@ -74,7 +78,7 @@ div#formulario > div.titulo {
 
 .campo > input { /* TextBox */
     margin: 4px 0px 8px 0px;
-    height: 33px;
+    height: 36px;
     text-indent: 10px;
     border: 1px solid rgba(0, 0, 0, 0.255);
     border-radius: 7px;
@@ -90,7 +94,7 @@ div#lembrar {
 #lembrar input[type="checkbox"] {
     display: inline;
     accent-color: var(--azul);
-    transform: scale(1.2);
+    transform: scale(1.1);
     cursor: pointer;
     margin-left: 5px;
 }
