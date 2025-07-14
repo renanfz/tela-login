@@ -5,6 +5,7 @@
     section#login {
         width: 520px;
         height: 340px;
+        margin-top: 8em;
     }
 
     section#login > div#capa {
@@ -32,6 +33,7 @@
     section#login {
         width: 750px;
         height: 340px;
+        margin-top: 8em;
     }
 
     section#login > div#capa {
@@ -62,6 +64,7 @@
     }
 
     footer > p {
-        text-align: center;
+        padding-bottom: 5px
     }
+
 }
